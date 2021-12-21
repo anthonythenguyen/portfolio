@@ -1,4 +1,5 @@
 import styled, { ThemeProvider } from "styled-components";
+import BioSpace from "./components/bio/BioSpace"
 
 import Header from "./components/Header";
 
@@ -14,7 +15,22 @@ const theme = {
     light: "#380036",
     dark: "#150811",
 };
-
+/*
+const theme = {
+    background: "#273043",
+    foreground: "#9197AE",
+    accent: "#DD0426",
+    light: "#EFF6EE",
+    dark: "#93032E",
+};
+*/
+/* 
+	Logo
+	Header
+	Bio
+	Projects container
+	Project template 
+*/
 const Background = styled.div`
     background-color: ${(props) => props.theme.background};
     width: 100vw;
@@ -25,7 +41,11 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <Background>
+
                 <Header>SheaBear19</Header>
+
+              <BioSpace />
+
             </Background>
         </ThemeProvider>
     );
