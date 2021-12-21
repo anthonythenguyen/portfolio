@@ -1,5 +1,7 @@
 import styled, { ThemeProvider } from "styled-components";
 
+import Header from "./components/Header";
+
 const theme = {
     red: "red",
     blue: "blue",
@@ -22,7 +24,9 @@ const Background = styled.div`
 function App() {
     return (
         <ThemeProvider theme={theme}>
-            <Background></Background>
+            <Background>
+                <Header>SheaBear19</Header>
+            </Background>
         </ThemeProvider>
     );
 }
