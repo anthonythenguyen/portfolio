@@ -1,6 +1,8 @@
 import styled, { ThemeProvider } from "styled-components";
 import BioSpace from "./components/bio/BioSpace"
 
+import Header from "./components/Header";
+
 const theme = {
     red: "red",
     blue: "blue",
@@ -39,7 +41,11 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <Background>
+
+                <Header>SheaBear19</Header>
+
               <BioSpace />
+
             </Background>
         </ThemeProvider>
     );
