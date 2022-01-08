@@ -8,7 +8,7 @@ const Head = styled.h1`
 
 const HeadDiv = styled.div`
     display: flex;
-    background-color: ${(props) => props.theme.foreground};
+    background-color: ${(props) => props.theme.light};
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -23,14 +23,9 @@ export default function (props) {
             {[...Array(timesClicked).keys()].map((ele) => (
                 <Logo
                     onClick={(e) => setTimesClicked((prev) => prev + 1)}
-                ></Logo>
+                />
             ))}
             <Head>{props.children}</Head>
-            {[...Array(timesClicked).keys()].map((ele) => (
-                <Logo
-                    onClick={(e) => setTimesClicked((prev) => prev + 1)}
-                ></Logo>
-            ))}
         </HeadDiv>
     );
 }
