@@ -1,8 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Background from "../../assets/images/background.jpeg";
 import styled from "styled-components";
-import { findByLabelText } from "@testing-library/react";
 
 const Bio = styled.div`
   background-image: url(${Background});

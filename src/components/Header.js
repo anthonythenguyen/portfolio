@@ -15,7 +15,7 @@ const HeadDiv = styled.div`
     overflow-x: hidden;
 `;
 
-export default function (props) {
+export default function Header (props) {
     const [timesClicked, setTimesClicked] = useState(1);
 
     return (
