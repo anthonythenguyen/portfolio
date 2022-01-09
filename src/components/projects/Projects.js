@@ -3,6 +3,8 @@ import styled from "styled-components";
 import LeftArrow from "../../assets/images/LeftArrow.png";
 import RightArrow from "../../assets/images/RightArrow.png";
 
+import Image from "../image/Image";
+
 const ProjectContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -78,9 +80,13 @@ const Title = styled.div`
   font-size: 4vh;
 `;
 
+const ProjectImage = styled.img`
+  width: 600px;
+  height: 300px;
+`;
+
 export default function Projects(props) {
   const containerRef = useRef();
-
   return (
     <MainContainer>
       <LeftArrowContainer
@@ -100,8 +106,9 @@ export default function Projects(props) {
             <ProjectsDiv key={index}>
               <GridBox>
                 <ImgDiv>
-                  <img src={ele.image1} />
-                  <img src={ele.image2} />
+                  <Image src={ele.image1} />
+
+                  <Image src={ele.image2} />
                 </ImgDiv>
                 <DescDiv>
                   <GridChild>

@@ -4,6 +4,19 @@ import BioSpace from "./components/bio/BioSpace";
 import Header from "./components/Header";
 //Change this eventually to a photo of yourself
 import Pic from "./assets/images/icon.png";
+
+import Subnote1 from "./assets/images/Subnote1.PNG";
+import Subnote2 from "./assets/images/Subnote2.PNG";
+
+import Android1 from "./assets/images/Android1.png";
+import Android2 from "./assets/images/Android2.png";
+
+import Theoretical1 from "./assets/images/Theoretical1.PNG";
+import Theoretical2 from "./assets/images/Theoretical2.PNG";
+
+import Minecraft1 from "./assets/images/Minecraft1.PNG";
+import Minecraft2 from "./assets/images/Minecraft2.PNG";
+
 import Projects from "./components/projects/Projects";
 
 const theme = {
@@ -40,29 +53,29 @@ const Background = styled.div`
 const list = [
   {
     title: "Subnote",
-    image1: Pic,
-    image2: Pic,
+    image1: Subnote1,
+    image2: Subnote2,
     description:
       "Using Ruby on Rails, ReactJS, HTML5, CSS Modules. It is a note taking webapp. Designed to allow any user to create notes and update them live to help store them digitally.",
   },
   {
     title: "Chatroom App",
-    image1: Pic,
-    image2: Pic,
+    image1: Android1,
+    image2: Android2,
     description:
       "Using Firestore/Firebase and Kotlin/Java in Android Studio. This is an android application. Created to allow users to be able to message other users with real-time updates.",
   },
   {
     title: "A Website for a Theoretical Company",
-    image1: Pic,
-    image2: Pic,
+    image1: Theoretical1,
+    image2: Theoretical2,
     description:
       "Using HTML5, Bootstrap, CSS and JavaScript. The purpose of the website was to advertise/showcase our local resort, Brian Head. Explaining and showcasing to anyone who accesses the site all the events and activities it has to offer during the different seasons.",
   },
   {
     title: "Minecraft Mod",
-    image1: Pic,
-    image2: Pic,
+    image1: Minecraft1,
+    image2: Minecraft2,
     description:
       "Using Java, I created my very own modification/addition to the already popular game Mineacraft. I also incorporated some designs to help showcase/explain Digital Electronics to the Introduction to Programming students.",
   },
