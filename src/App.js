@@ -54,8 +54,8 @@ const BioDescription = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65%;
-  font-size: 1.5vh;
+  width: 80%;
+  font-size: 2vh;
 `;
 
 const ProjectTabContainer = styled.div`
@@ -82,6 +82,7 @@ const list = [
     image2: Subnote2,
     description:
       "Using Ruby on Rails, ReactJS, HTML5, CSS Modules. Subnote is a note taking webapp, designed to allow any user to create their own personal notes digitally with live updating.",
+    link: "https://github.com/anthonythenguyen/Subnote",
   },
   {
     title: "Chatroom App",
@@ -89,6 +90,7 @@ const list = [
     image2: Android2,
     description:
       "Using Firestore/Firebase and Kotlin/Java in Android Studio. This is an android application created to allow users to be able to message other users with real-time updates.",
+    link: "https://github.com/anthonythenguyen/The-Chatroom-App",
   },
   {
     title: "A Website for a Theoretical Company",

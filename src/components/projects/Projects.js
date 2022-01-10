@@ -85,7 +85,6 @@ const ProjDescription = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 5rem;
-  width: 75%;
   font-size: 2vh;
 `;
 
@@ -120,6 +119,11 @@ export default function Projects(props) {
                   </GridChild>
                   <ProjDescription>
                     <p>{ele.description}</p>
+                  </ProjDescription>
+                  <ProjDescription>
+                    <a href={ele.link}>
+                      <p>{ele.link}</p>
+                    </a>
                   </ProjDescription>
                 </DescDiv>
               </GridBox>
