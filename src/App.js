@@ -3,7 +3,6 @@ import BioSpace from "./components/bio/BioSpace";
 
 import Header from "./components/Header";
 //Change this eventually to a photo of yourself
-import Pic from "./assets/images/icon.png";
 import Me from "./assets/images/photo.jpg";
 
 import Subnote1 from "./assets/images/Subnote1.PNG";
