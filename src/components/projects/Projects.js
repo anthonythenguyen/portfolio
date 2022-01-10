@@ -11,8 +11,8 @@ const ProjectContainer = styled.div`
   align-items: center;
 
   background-color: #273043;
-  min-width: 80%;
-  padding: 5em 0;
+  min-width: 70%;
+  padding: 1rem 0;
   overflow-x: auto;
   gap: 15px;
   scroll-behavior: smooth;

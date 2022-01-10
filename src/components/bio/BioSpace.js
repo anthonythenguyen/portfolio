@@ -7,8 +7,8 @@ const Bio = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
-  padding: 5em 0;
+  width: 100%;
+  padding: 3em 0;
 `;
 
 const Description = styled.div`

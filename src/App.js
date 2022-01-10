@@ -23,7 +23,7 @@ const theme = {
   background: "#273043",
   foreground: "#9197AE",
   accent: "#DD0426",
-  light: "#0CBABA",
+  light: "#00FFF5",
   dark: "#0CBABA",
 };
 
@@ -45,7 +45,7 @@ const Img = styled.img`
 
 const Background = styled.div`
   background-color: ${(props) => props.theme.background};
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   align-items: center;
 `;
@@ -55,6 +55,19 @@ const BioDescription = styled.div`
   justify-content: center;
   align-items: center;
   width: 65%;
+`;
+
+const ProjectTabContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const ProjectTab = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: #9197ae;
 `;
 
 const list = [
@@ -108,7 +121,11 @@ function App() {
             </BioDescription>
           </GridBox>
         </BioSpace>
-
+        <ProjectTabContainer>
+          <ProjectTab>
+            <h1>Projects</h1>
+          </ProjectTab>
+        </ProjectTabContainer>
         <Projects projectsInfo={list}></Projects>
       </Background>
     </ThemeProvider>

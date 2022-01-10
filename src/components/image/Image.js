@@ -16,7 +16,7 @@ const PopOutImg = styled.div`
 
 const PopOutImgContainer = styled.div`
   background-color: #111d;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   position: fixed;
@@ -27,6 +27,7 @@ const PopOutImgContainer = styled.div`
 const ProjectImage = styled.img`
   width: 600px;
   height: 300px;
+  padding: 1rem;
 `;
 
 function Image(props) {
