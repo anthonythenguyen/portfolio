@@ -80,6 +80,15 @@ const Title = styled.div`
   font-size: 4vh;
 `;
 
+const ProjDescription = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+  width: 75%;
+  font-size: 2vh;
+`;
+
 export default function Projects(props) {
   const containerRef = useRef();
   return (
@@ -109,7 +118,9 @@ export default function Projects(props) {
                   <GridChild>
                     <Title>{ele.title}</Title>
                   </GridChild>
-                  <GridChild>{ele.description}</GridChild>
+                  <ProjDescription>
+                    <p>{ele.description}</p>
+                  </ProjDescription>
                 </DescDiv>
               </GridBox>
             </ProjectsDiv>

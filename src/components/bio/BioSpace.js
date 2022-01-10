@@ -19,7 +19,7 @@ const Description = styled.div`
   border-radius: 7px;
   padding: 1rem;
   flex-grow: 1;
-  max-width: 66%;
+  max-width: 50%;
   box-shadow: 5px 5px 15px #444;
 `;
 

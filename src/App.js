@@ -4,6 +4,7 @@ import BioSpace from "./components/bio/BioSpace";
 import Header from "./components/Header";
 //Change this eventually to a photo of yourself
 import Pic from "./assets/images/icon.png";
+import Me from "./assets/images/photo.jpg";
 
 import Subnote1 from "./assets/images/Subnote1.PNG";
 import Subnote2 from "./assets/images/Subnote2.PNG";
@@ -38,7 +39,7 @@ const GridChild = styled.div`
 `;
 
 const Img = styled.img`
-  max-width: 100%;
+  max-width: 55%;
   max-height: 100%;
   border-radius: 12px;
 `;
@@ -50,20 +51,27 @@ const Background = styled.div`
   align-items: center;
 `;
 
+const BioDescription = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+`;
+
 const list = [
   {
     title: "Subnote",
     image1: Subnote1,
     image2: Subnote2,
     description:
-      "Using Ruby on Rails, ReactJS, HTML5, CSS Modules. It is a note taking webapp. Designed to allow any user to create notes and update them live to help store them digitally.",
+      "Using Ruby on Rails, ReactJS, HTML5, CSS Modules. Subnote is a note taking webapp, designed to allow any user to create their own personal notes digitally with live updating.",
   },
   {
     title: "Chatroom App",
     image1: Android1,
     image2: Android2,
     description:
-      "Using Firestore/Firebase and Kotlin/Java in Android Studio. This is an android application. Created to allow users to be able to message other users with real-time updates.",
+      "Using Firestore/Firebase and Kotlin/Java in Android Studio. This is an android application created to allow users to be able to message other users with real-time updates.",
   },
   {
     title: "A Website for a Theoretical Company",
@@ -89,17 +97,16 @@ function App() {
         <BioSpace>
           <GridBox>
             <GridChild>
-              <Img src={Pic} />
+              <Img src={Me} />
             </GridChild>
-            <GridChild>
+            <BioDescription>
               <p>
-                Newly graduated Computer Science major. I grew up amazed by
-                technology and knew that my future had to contain an aspect of
-                the technological field in it. I started Software Development
-                and eventually branched out to Web Development also branching
-                into Full Stack Development.
+                My fascination with technology budded as a child, inspiring me
+                to study software development and after spending time coding I
+                branched my education and experience into mobile app development
+                then to web development and full stack development.
               </p>
-            </GridChild>
+            </BioDescription>
           </GridBox>
         </BioSpace>
 
