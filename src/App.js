@@ -55,11 +55,14 @@ const BioDescription = styled.div`
   justify-content: center;
   align-items: center;
   width: 65%;
+  font-size: 1.5vh;
 `;
 
 const ProjectTabContainer = styled.div`
   display: flex;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
 `;
 
 const ProjectTab = styled.div`
@@ -68,6 +71,8 @@ const ProjectTab = styled.div`
   align-items: center;
   width: 100%;
   color: #9197ae;
+  font-size: 32pt;
+  font-weight: bold;
 `;
 
 const list = [
@@ -122,9 +127,7 @@ function App() {
           </GridBox>
         </BioSpace>
         <ProjectTabContainer>
-          <ProjectTab>
-            <h1>Projects</h1>
-          </ProjectTab>
+          <ProjectTab>Projects</ProjectTab>
         </ProjectTabContainer>
         <Projects projectsInfo={list}></Projects>
       </Background>

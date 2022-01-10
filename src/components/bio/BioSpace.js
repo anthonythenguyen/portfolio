@@ -8,7 +8,7 @@ const Bio = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  padding: 3em 0;
+  padding: 1.5em 0;
 `;
 
 const Description = styled.div`
@@ -29,12 +29,30 @@ const FlexDisplay = styled.div`
   justify-content: center;
 `;
 
+const FlexColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const AboutMe = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32pt;
+  padding: 0;
+  margin: 0;
+  color: #273043;
+  font-weight: bold;
+`;
 function bio(props) {
   return (
     <Bio>
-      <FlexDisplay>
-        <Description>{props.children}</Description>
-      </FlexDisplay>
+      <FlexColumn>
+        <AboutMe>About Me</AboutMe>
+        <FlexDisplay>
+          <Description>{props.children}</Description>
+        </FlexDisplay>
+      </FlexColumn>
     </Bio>
   );
 }

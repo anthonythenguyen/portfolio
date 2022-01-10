@@ -77,7 +77,7 @@ const DescDiv = styled.div`
 const Title = styled.div`
   display: flex;
   justify-content: center;
-  font-size: 4vh;
+  font-size: 32pt;
 `;
 
 const ProjDescription = styled.div`
