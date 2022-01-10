@@ -28,6 +28,7 @@ const ProjectImage = styled.img`
   width: 600px;
   height: 300px;
   padding: 1rem;
+  object-fit: contain;
 `;
 
 function Image(props) {
