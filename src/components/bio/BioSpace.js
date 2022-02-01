@@ -1,5 +1,4 @@
 import React from "react";
-import Background from "../../assets/images/background.jpeg";
 import styled from "styled-components";
 
 // background-image: url(${Background});
