@@ -8,7 +8,7 @@ const Head = styled.h1`
 
 const HeadDiv = styled.div`
   display: flex;
-  background-color: ${(props) => props.theme.light};
+  background-color: ${(props) => props.theme.dark};
   justify-content: space-between;
   align-items: center;
   padding: 10px;

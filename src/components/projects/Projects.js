@@ -12,7 +12,7 @@ const ProjectContainer = styled.div`
 
   background-color: #273043;
   min-width: 70%;
-  padding: 1rem 0;
+  padding: 0;
   overflow-x: auto;
   gap: 15px;
   scroll-behavior: smooth;
@@ -20,15 +20,17 @@ const ProjectContainer = styled.div`
 
 const ProjectsDiv = styled.div`
   display: flex;
+  flex-direction: row;
   background-color: #9197ae;
   justify-content: space-around;
   align-items: center;
   border-radius: 7px;
-  flex-grow: 5;
+
   box-shadow: 5px 5px 15px #444;
   padding: 1rem 0;
   min-width: 100%;
 `;
+//flex-grow: 5; ^
 
 const MainContainer = styled.div`
   display: flex;
@@ -58,6 +60,9 @@ const GridBox = styled.div`
   grid-template-columns: 1fr 2fr;
   grid-gap: 2em;
   padding: 0 1rem;
+  @media (max-width: 768px) {
+    grid-template-columns: auto;
+  }
 `;
 
 const GridChild = styled.div`
@@ -67,11 +72,14 @@ const GridChild = styled.div`
 const ImgDiv = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 0;
+  object-fit: cover;
 `;
 
 const DescDiv = styled.div`
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 `;
 
 const Title = styled.div`
@@ -84,8 +92,9 @@ const ProjDescription = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 5rem;
+  width: 100%;
   font-size: 2vh;
+  overflow-y: auto;
 `;
 
 export default function Projects(props) {

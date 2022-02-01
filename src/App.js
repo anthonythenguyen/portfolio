@@ -30,6 +30,9 @@ const theme = {
 const GridBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
+  @media (max-width: 768px) {
+    grid-template-columns: auto;
+  }
   grid-gap: 2em;
 `;
 
@@ -39,6 +42,9 @@ const GridChild = styled.div`
 
 const Img = styled.img`
   max-width: 55%;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
   max-height: 100%;
   border-radius: 12px;
 `;

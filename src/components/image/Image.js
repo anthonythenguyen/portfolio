@@ -24,14 +24,21 @@ const PopOutImgContainer = styled.div`
   left: 0;
 `;
 
+//width: 600px;
+//height: 300px;
 const ProjectImage = styled.img`
   width: 600px;
   height: 300px;
   padding: 1rem;
   object-fit: contain;
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 100px;
+  }
 `;
 
 function Image(props) {
+
   const [popOut, setPopOut] = useState(false);
   return (
     <>

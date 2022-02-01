@@ -44,6 +44,7 @@ const AboutMe = styled.div`
   color: #273043;
   font-weight: bold;
 `;
+
 function bio(props) {
   return (
     <Bio>
