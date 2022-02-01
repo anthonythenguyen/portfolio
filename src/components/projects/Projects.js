@@ -5,17 +5,12 @@ import RightArrow from "../../assets/images/RightArrow.png";
 
 import Image from "../image/Image";
 
-// background-color: #03254c;
+//
 const ProjectContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  background-image: linear-gradient(
-    to right,
-    rgb(184, 135, 70),
-    rgb(253, 245, 166)
-  );
   min-width: 70%;
   padding: 0;
   overflow-x: auto;
@@ -23,14 +18,18 @@ const ProjectContainer = styled.div`
   scroll-behavior: smooth;
 `;
 
+//background-color: #9197ae;
 const ProjectsDiv = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: #9197ae;
   justify-content: space-around;
   align-items: center;
   border-radius: 7px;
-
+  background-image: linear-gradient(
+    to right,
+    rgb(184, 135, 70),
+    rgb(253, 245, 166)
+  );
   box-shadow: 5px 5px 15px #444;
   padding: 1rem 0;
   min-width: 100%;
@@ -92,7 +91,8 @@ const DescDiv = styled.div`
 const Title = styled.div`
   display: flex;
   justify-content: center;
-  font-size: 32pt;
+  font-size: 28pt;
+  font-weight: bold;
 `;
 
 const ProjDescription = styled.div`
@@ -125,6 +125,7 @@ export default function Projects(props) {
             <ProjectsDiv key={index}>
               <GridBox>
                 <ImgDiv>
+                
                   <Image src={ele.image1} />
 
                   <Image src={ele.image2} />

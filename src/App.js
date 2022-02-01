@@ -55,8 +55,9 @@ const Img = styled.img`
   border: 2px solid white;
 `;
 
+// background-color: ${(props) => props.theme.background};
 const Background = styled.div`
-  background-color: ${(props) => props.theme.background};
+  background-color: #191919;
   width: 100%;
   min-height: 100vh;
   align-items: center;
@@ -72,9 +73,10 @@ const BioDescription = styled.div`
 
 const ProjectTabContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  padding: 0;
+  flex-direction: column;
+  padding: 1rem 0;
   margin: 0;
+  gap: 1.5em;
 `;
 
 const ProjectTab = styled.div`
@@ -134,16 +136,17 @@ function App() {
               <p>
                 My fascination with technology budded as a child, inspiring me
                 to study software development and after spending time coding I
-                branched my education and experience into mobile app development
-                then to web development and full stack development.
+                branched my education and experience into mobile app and full
+                stack development.
               </p>
             </BioDescription>
           </GridBox>
         </BioSpace>
+        <hr style={{ maxWidth: "75%" }}></hr>
         <ProjectTabContainer>
           <ProjectTab>Projects</ProjectTab>
+          <Projects projectsInfo={list}></Projects>
         </ProjectTabContainer>
-        <Projects projectsInfo={list}></Projects>
       </Background>
     </ThemeProvider>
   );
