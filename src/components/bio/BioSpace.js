@@ -5,15 +5,20 @@ import styled from "styled-components";
 //   background-position: center;
 //   background-repeat: no-repeat;
 //   background-size: cover;
+// background-color: rgb(112, 146, 190)
 const Bio = styled.div`
-  background-color: rgb(112, 146, 190);
+  background-color: #191919;
   width: 100%;
   padding: 1.5em 0;
 `;
-
+//background-color: rgb(180, 215, 254)
 const Description = styled.div`
   display: flex;
-  background-color: rgb(180, 215, 254);
+  background-image: linear-gradient(
+    to right,
+    rgb(184, 135, 70),
+    rgb(253, 245, 166)
+  );
   justify-content: space-around;
   align-items: center;
   border-radius: 7px;

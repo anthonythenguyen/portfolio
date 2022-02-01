@@ -5,12 +5,17 @@ import RightArrow from "../../assets/images/RightArrow.png";
 
 import Image from "../image/Image";
 
+// background-color: #03254c;
 const ProjectContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  background-color: #03254c;
+  background-image: linear-gradient(
+    to right,
+    rgb(184, 135, 70),
+    rgb(253, 245, 166)
+  );
   min-width: 70%;
   padding: 0;
   overflow-x: auto;
