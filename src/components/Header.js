@@ -8,11 +8,12 @@ const Head = styled.h1`
 
 const HeadDiv = styled.div`
   display: flex;
-  background-color: ${(props) => props.theme.dark};
+  background-color: ${(props) => props.theme.background};
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   overflow-x: hidden;
+  color: ${(props) => props.theme.foreground};
 `;
 
 export default function Header(props) {

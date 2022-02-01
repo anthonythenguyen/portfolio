@@ -10,7 +10,7 @@ const ProjectContainer = styled.div`
   flex-direction: row;
   align-items: center;
 
-  background-color: #273043;
+  background-color: #03254c;
   min-width: 70%;
   padding: 0;
   overflow-x: auto;
@@ -72,6 +72,8 @@ const GridChild = styled.div`
 const ImgDiv = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   object-fit: cover;
 `;

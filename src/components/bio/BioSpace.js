@@ -2,18 +2,19 @@ import React from "react";
 import Background from "../../assets/images/background.jpeg";
 import styled from "styled-components";
 
+// background-image: url(${Background});
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
 const Bio = styled.div`
-  background-image: url(${Background});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(112, 146, 190);
   width: 100%;
   padding: 1.5em 0;
 `;
 
 const Description = styled.div`
   display: flex;
-  background-color: #eff6ee;
+  background-color: rgb(180, 215, 254);
   justify-content: space-around;
   align-items: center;
   border-radius: 7px;
@@ -41,7 +42,7 @@ const AboutMe = styled.div`
   font-size: 32pt;
   padding: 0;
   margin: 0;
-  color: #273043;
+  color: rgb(230, 241, 255);
   font-weight: bold;
 `;
 

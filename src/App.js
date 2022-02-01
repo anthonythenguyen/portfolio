@@ -19,8 +19,9 @@ import Minecraft2 from "./assets/images/Minecraft2.PNG";
 
 import Projects from "./components/projects/Projects";
 
+// #273043
 const theme = {
-  background: "#273043",
+  background: "#03254c",
   foreground: "#9197AE",
   accent: "#DD0426",
   light: "#00FFF5",
@@ -38,10 +39,14 @@ const GridBox = styled.div`
 
 const GridChild = styled.div`
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Img = styled.img`
   max-width: 55%;
+  display: flex;
   @media (max-width: 768px) {
     max-width: 100%;
   }
@@ -76,7 +81,7 @@ const ProjectTab = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  color: #9197ae;
+  color: rgb(230, 241, 255);
   font-size: 32pt;
   font-weight: bold;
 `;
