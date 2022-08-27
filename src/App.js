@@ -118,7 +118,7 @@ const list = [
     image1: Minecraft1,
     image2: Minecraft2,
     description:
-      "Using Java, I created my very own modification/addition to the already popular game Mineacraft. I also incorporated some designs to help showcase/explain Digital Electronics to the Introduction to Programming students.",
+      "Using Java, I created my very own modification/addition to the already popular game Minecraft. I also incorporated some designs to help showcase/explain Digital Electronics to the Introduction to Programming students.",
   },
 ];
 
